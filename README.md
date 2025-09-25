@@ -123,16 +123,6 @@ After applying, Terraform provides:
 
 ---
 
-## Assumptions
-
-- ECS EC2 launch type is used.
-- Node.js application exposes `/db-status` endpoint to verify RDS connectivity.
-- RDS is only accessible from ECS tasks in private subnets.
-- Docker image must be built and pushed to ECR manually.
-- Security Groups, Secrets, and other AWS resources must not conflict with existing ones.
-
----
-
 ## Notes
 
 - VPC CIDR: `172.16.0.0/16`
